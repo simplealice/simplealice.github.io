@@ -4,59 +4,174 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Personal Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <!-- Bootstrap Icons for Social Media -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="styles/main.css">
 </head>
-<body>
+<body class="bg-light transition-colors duration-300">
     <!-- Header -->
-    <header>
-        <h1>Simple Alice</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+    <header class="navbar navbar-expand-lg navbar-dark bg-success sticky-top shadow">
+        <div class="container">
+            <a class="navbar-brand" href="#">Simple Alice</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
     </header>
 
     <!-- Hero Section -->
-    <section id="home">
-        <h2>Welcome to My Website!</h2>
-        <p>Hi, I'm Alisa, a passionate learner and creator.</p>
+    <section id="home" class="min-vh-100 d-flex align-items-center justify-content-center text-white position-relative" style="background: linear-gradient(to right, #1e7e34, #28a745);">
+        <div class="container text-center" data-aos="fade-up">
+            <h1 class="display-3 glitch" data-text="Hi, I’m Alisa">Hi, I’m Alisa</h1>
+            <p class="lead">A futuristic creator coding the impossible.</p>
+            <a href="#projects" class="btn btn-success btn-lg">Explore My Universe</a>
+        </div>
     </section>
 
     <!-- About Section -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I'm a programmer with interests in coding, design, and technology. I love building projects that solve real-world problems.</p>
+    <section id="about" class="py-5" data-aos="fade-up">
+        <div class="container">
+            <h2 class="text-center mb-4">About Me</h2>
+            <div class="text-center mb-4">
+                <img src="images/avatar.jpg" alt="Profile Picture" class="rounded-circle" style="width: 250px;">
+            </div>
+            <p class="lead text-center mx-auto" style="max-width: 600px;">I'm a programmer with a love for creating user-friendly, visually appealing apps. My skills include C++, Unity, Java, HTML, CSS, JavaScript, and more.</p>
+            <div class="skills mt-4">
+                <div class="skill">
+                    <span class="skill-name">C++</span>
+                    <div class="progress">
+                        <div class="progress-bar bg-success" style="width: 80%"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span class="skill-name">Unity</span>
+                    <div class="progress">
+                        <div class="progress-bar bg-success" style="width: 70%"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span class="skill-name">Java</span>
+                    <div class="progress">
+                        <div class="progress-bar bg-success" style="width: 75%"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span class="skill-name">JavaScript</span>
+                    <div class="progress">
+                        <div class="progress-bar bg-success" style="width: 85%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects">
-        <h2>My Projects</h2>
-        <div class="project">
-            <h3>Project 1</h3>
-            <p>A simple website I built to learn HTML and CSS.</p>
-        </div>
-        <div class="project">
-            <h3>Project 2</h3>
-            <p>A to-do list app using JavaScript.</p>
+    <section id="projects" class="py-5 bg-light" data-aos="fade-up">
+        <div class="container">
+            <h2 class="text-center mb-4">My Projects</h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <div class="col">
+                    <div class="card h-100 shadow-sm hover-card">
+                        <img src="images/beyond.jpg" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h3 class="card-title">Beyond The Code</h3>
+                            <p class="card-text">A platformer game about AI's adventure in virtual space.</p>
+                            <a href="#" class="btn btn-success">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow-sm hover-card">
+                        <img src="images/lia.jpg" class="card-img-top" alt="Project 2">
+                        <div class="card-body">
+                            <h3 class="card-title">LIA</h3>
+                            <p class="card-text">An escape 2D game about girl and sins.</p>
+                            <a href="#" class="btn btn-success">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow-sm hover-card">
+                        <img src="images/edu.jpg" class="card-img-top" alt="Project 3">
+                        <div class="card-body">
+                            <h3 class="card-title">Znayka</h3>
+                            <p class="card-text">An educational game for children.</p>
+                            <a href="#" class="btn btn-success">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: simplealice2@yandex.ru</p>
-        <!-- <p>Find me on <a href="https://x.com" target="_blank">X</a> or <a href="https://linkedin.com" target="_blank">LinkedIn</a>.</p> -->
+    <section id="contact" class="py-5" data-aos="fade-up">
+        <div class="container">
+            <h2 class="text-center mb-4">Get in Touch</h2>
+            <div class="row g-4">
+                <!-- Contact Form (Left Half) -->
+                <div class="col-lg-6">
+                    <p class="lead mb-4">Want to collaborate or say hi? Drop me a message!</p>
+                    <form id="contact-form">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-success">Send</button>
+                    </form>
+                    <p id="form-feedback" class="mt-3 text-center"></p>
+                </div>
+                <!-- Social Media Showcase (Right Half) -->
+                <div class="col-lg-6 d-flex flex-column justify-content-center align-items-center text-center social-section">
+                    <p class="lead mb-4">Connect with me online!</p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/alisa-perevoznikova-0366b32a7/" target="_blank" class="social-link" data-aos="zoom-in" data-aos-delay="200">
+                            <i class="bi bi-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://github.com/simplealice" target="_blank" class="social-link" data-aos="zoom-in" data-aos-delay="300">
+                            <i class="bi bi-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+                    <p class="mt-4">Email: <a href="mailto:simplealice2@yandex.ru" class="text-primary">simplealice2@yandex.ru</a></p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Simple Alice. All rights reserved.</p>
+    <footer class="bg-success text-white text-center py-4">
+        <div class="container">
+            <p>© 2025 Simple Alice. All rights reserved.</p>
+        </div>
     </footer>
 
-    <!-- <script src="script.js"></script> -->
+    <!-- Back to Top Button -->
+    <a href="#home" class="back-to-top btn btn-success position-fixed bottom-0 end-0 m-3" style="display: none;">↑</a>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="func/script.js"></script>
 </body>
 </html>
