@@ -3,175 +3,486 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Website</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-    <!-- Bootstrap Icons for Social Media -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <meta name="description" content="Alisa Perevoznikova - game programmer and Unity developer building gameplay systems, puzzles, UI, and narrative tools.">
+    <meta name="theme-color" content="#070b0a">
+    <title>Alisa | Game Programmer &amp; Unity Developer</title>
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.css">
+    <script>document.documentElement.classList.add('js');</script>
 </head>
-<body class="bg-light transition-colors duration-300">
+<body>
+    <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+
     <!-- Header -->
-    <header class="navbar navbar-expand-lg navbar-dark bg-success sticky-top shadow">
-        <div class="container">
-            <a class="navbar-brand" href="#">Simple Alice</a>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
-            </div>
+    <header class="site-header" id="site-header">
+        <div class="container nav-inner">
+            <a href="#home" class="brand" aria-label="Simple Alice - home">
+                <span class="brand-mark">A</span>
+                <span>Simple<span class="brand-accent">Alice</span></span>
+            </a>
+
+            <nav class="nav-links" id="nav-links" aria-label="Primary">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="#contact" class="nav-cta">Let's talk</a>
+            </nav>
+
+            <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="min-vh-100 d-flex align-items-center justify-content-center text-white position-relative" style="background: linear-gradient(to right, #1e7e34, #28a745);">
-        <div class="container text-center" data-aos="fade-up">
-            <h1 class="display-3 glitch" data-text="Hi, I’m Alisa">Hi, I’m Alisa</h1>
-            <p class="lead">A futuristic creator coding the impossible.</p>
-            <a href="#projects" class="btn btn-success btn-lg">Explore My Universe</a>
-        </div>
-    </section>
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-glow" aria-hidden="true">
+                <span class="blob blob-1"></span>
+                <span class="blob blob-2"></span>
+                <span class="blob blob-3"></span>
+            </div>
+            <div class="hero-grid" aria-hidden="true"></div>
 
-    <!-- About Section -->
-    <section id="about" class="py-5" data-aos="fade-up">
-        <div class="container">
-            <h2 class="text-center mb-4">About Me</h2>
-            <div class="text-center mb-4">
-                <img src="images/avatar.jpg" alt="Profile Picture" class="rounded-circle" style="width: 250px;">
-            </div>
-            <p class="lead text-center mx-auto" style="max-width: 600px;">I'm a programmer with a love for creating user-friendly, visually appealing apps. My skills include C++, Unity, Java, HTML, CSS, JavaScript, and more.</p>
-            <div class="skills mt-4">
-                <div class="skill">
-                    <span class="skill-name">C++</span>
-                    <div class="progress">
-                        <div class="progress-bar bg-success" style="width: 80%"></div>
+            <div class="container">
+                <div class="hero-layout">
+                    <div class="hero-copy reveal">
+                        <span class="hero-badge">
+                            <span class="status-dot"></span>
+                            Game Programmer &middot; Unity / C#
+                        </span>
+                        <h1 class="hero-title">Hi, I'm <span class="gradient-text">Alisa</span>.<br>I like creating things.</h1>
+                        <p class="hero-sub">I enjoy building the systems, mechanics, and bringing something new to this world.</p>
+                        <div class="hero-actions">
+                            <a href="#projects" class="btn-glow">
+                                Explore my universe
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="7" x2="17" y2="17"/><polyline points="17 7 17 17 7 17"/></svg>
+                            </a>
+                            <a href="images/CV-game-eng-3.pdf" class="btn-ghost" download="Alisa-Perevoznikova-CV.pdf">Download CV</a>
+                        </div>
+                        <div class="hero-stats">
+                            <div class="stat">
+                                <span class="stat-value">5+</span>
+                                <span class="stat-label">Games built</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">2</span>
+                                <span class="stat-label">Gamejam awards</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">PhD</span>
+                                <span class="stat-label">Tsinghua CS</span>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="skill">
-                    <span class="skill-name">Unity</span>
-                    <div class="progress">
-                        <div class="progress-bar bg-success" style="width: 70%"></div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <span class="skill-name">Java</span>
-                    <div class="progress">
-                        <div class="progress-bar bg-success" style="width: 75%"></div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <span class="skill-name">JavaScript</span>
-                    <div class="progress">
-                        <div class="progress-bar bg-success" style="width: 85%"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="py-5 bg-light" data-aos="fade-up">
-        <div class="container">
-            <h2 class="text-center mb-4">My Projects</h2>
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-                <div class="col">
-                    <div class="card h-100 shadow-sm hover-card">
-                        <img src="images/beyond.jpg" class="card-img-top" alt="Project 1">
-                        <div class="card-body">
-                            <h3 class="card-title">Beyond The Code</h3>
-                            <p class="card-text">A platformer game about AI's adventure in virtual space.</p>
-                            <a href="#" class="btn btn-success">View Project</a>
+                    <div class="hero-visual reveal" style="--reveal-delay: 140ms">
+                        <div class="avatar-glow" aria-hidden="true"></div>
+                        <div class="avatar-frame">
+                            <img src="images/avatar.jpg" alt="Portrait of Alisa" class="avatar-img" fetchpriority="high">
                         </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100 shadow-sm hover-card">
-                        <img src="images/lia.jpg" class="card-img-top" alt="Project 2">
-                        <div class="card-body">
-                            <h3 class="card-title">LIA</h3>
-                            <p class="card-text">An escape 2D game about girl and sins.</p>
-                            <a href="#" class="btn btn-success">View Project</a>
+                        <div class="float-card float-card--top">
+                            <span class="float-icon">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                            </span>
+                            <div>
+                                <strong>Unity &middot; C#</strong>
+                                <small>Game development</small>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100 shadow-sm hover-card">
-                        <img src="images/edu.jpg" class="card-img-top" alt="Project 3">
-                        <div class="card-body">
-                            <h3 class="card-title">Znayka</h3>
-                            <p class="card-text">An educational game for children.</p>
-                            <a href="#" class="btn btn-success">View Project</a>
+                        <div class="float-card float-card--bottom">
+                            <span class="status-dot"></span>
+                            <div>
+                                <strong>Open to game roles</strong>
+                                <small>Unity &middot; C#</small>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-5" data-aos="fade-up">
-        <div class="container">
-            <h2 class="text-center mb-4">Get in Touch</h2>
-            <div class="row g-4">
-                <!-- Contact Form (Left Half) -->
-                <div class="col-lg-6">
-                    <p class="lead mb-4">Want to collaborate or say hi? Drop me a message!</p>
-                    <form id="contact-form">
-                        <div class="mb-3">
-                            <label for="name" class="form-label">Name</label>
-                            <input type="text" class="form-control" id="name" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="message" class="form-label">Message</label>
-                            <textarea class="form-control" id="message" rows="4" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-success">Send</button>
-                    </form>
-                    <p id="form-feedback" class="mt-3 text-center"></p>
+            <a href="#about" class="scroll-hint" aria-label="Scroll to about section">
+                <span class="scroll-mouse"></span>
+                Scroll
+            </a>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <div class="section-head reveal">
+                    <h2>About</h2>
                 </div>
-                <!-- Social Media Showcase (Right Half) -->
-                <div class="col-lg-6 d-flex flex-column justify-content-center align-items-center text-center social-section">
-                    <p class="lead mb-4">Connect with me online!</p>
-                    <div class="social-links">
-                        <a href="https://www.linkedin.com/in/alisa-perevoznikova-0366b32a7/" target="_blank" class="social-link" data-aos="zoom-in" data-aos-delay="200">
-                            <i class="bi bi-linkedin"></i>
-                            <span>LinkedIn</span>
-                        </a>
-                        <a href="https://github.com/simplealice" target="_blank" class="social-link" data-aos="zoom-in" data-aos-delay="300">
-                            <i class="bi bi-github"></i>
-                            <span>GitHub</span>
-                        </a>
-                    </div>
-                    <p class="mt-4">Email: <a href="mailto:simplealice2@yandex.ru" class="text-primary">simplealice2@yandex.ru</a></p>
+
+                <div class="about-grid">
+                    <article class="glass-card about-card reveal">
+                        <p class="about-lead">I'm a game programmer working in Unity and C#.</p>
+                        <p class="about-text">My projects range from 2D platformers and narrative horror to educational games and a mobile visual novel. I’m a curious and adaptable developer who is comfortable working independently, collaborating with others, and picking up new technologies when needed.</p>
+
+                        <div class="fact-grid">
+                            <div class="fact fact--wide">
+                                <span class="fact-label">Languages</span>
+                                <span class="fact-value">Russian (native) &middot; English (fluent) &middot; Chinese (HSK4)</span>
+                            </div>
+                        </div>
+
+                        <div class="about-tools">
+                            <h3 class="card-heading">Tools</h3>
+                            <div class="tech-chips">
+                                <span>ScriptableObjects</span>
+                                <span>Prefabs</span>
+                                <span>Animator</span>
+                                <span>TextMeshPro</span>
+                                <span>Firebase</span>
+                                <span>Git</span>
+                                <span>Figma</span>
+                                <span>Photoshop</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="glass-card skills-card reveal" style="--reveal-delay: 120ms">
+                        <h3 class="card-heading">Skills</h3>
+
+                        <ul class="skill-list">
+                            <li class="skill-item">
+                                <span class="skill-name">Unity</span>
+                                <span class="skill-level" aria-label="5 out of 5">★★★★★</span>
+                            </li>
+                            <li class="skill-item">
+                                <span class="skill-name">C#</span>
+                                <span class="skill-level" aria-label="4 out of 5">★★★★☆</span>
+                            </li>
+                            <li class="skill-item">
+                                <span class="skill-name">C++</span>
+                                <span class="skill-level" aria-label="4 out of 5">★★★★☆</span>
+                            </li>
+                            <li class="skill-item">
+                                <span class="skill-name">JavaScript / React</span>
+                                <span class="skill-level" aria-label="4 out of 5">★★★★☆</span>
+                            </li>
+                            <li class="skill-item">
+                                <span class="skill-name">Java</span>
+                                <span class="skill-level" aria-label="4 out of 5">★★★★☆</span>
+                            </li>
+                            <li class="skill-item">
+                                <span class="skill-name">SQL</span>
+                                <span class="skill-level" aria-label="3 out of 5">★★★☆☆</span>
+                            </li>
+                        </ul>
+                    </article>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section section-alt">
+            <div class="container">
+                <div class="section-head reveal">
+                    <h2>Projects</h2>
+                </div>
+
+                <div class="project-grid">
+                    <article class="project-card reveal">
+                        <button type="button" class="project-media" data-video-src="images/videos/BeyondTheCode.mp4" data-video-title="Beyond The Code" aria-label="Play Beyond The Code demo">
+                            <video src="images/videos/BeyondTheCode.mp4" poster="images/beyond.jpg" muted loop playsinline preload="metadata" aria-hidden="true"></video>
+                            <span class="project-overlay"></span>
+                            <span class="play-badge" aria-hidden="true">
+                                <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                            </span>
+                        </button>
+                        <div class="project-body">
+                            <div class="project-tags">
+                                <span>Unity</span><span>C#</span><span>Platformer</span><span>Game jam</span>
+                            </div>
+                            <h3 class="project-title">Beyond The Code</h3>
+                            <p class="project-desc">Guide a ghost through cyberspace, activate ports, unlock abilities, and dodge danger in this 2D platformer.</p>
+                            <p class="project-award">Best Potential Award &middot; Offline Popularity Award</p>
+                            <div class="project-meta">
+                                <span>10/2024</span>
+                                <a href="https://leihuo.163.com/h5/20240920/gamejam-hz/#/workDetail/64" target="_blank" rel="noopener">View submission</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal" style="--reveal-delay: 100ms">
+                        <button type="button" class="project-media" data-video-src="images/videos/LIA_quest_game.mp4" data-video-title="LIA" aria-label="Play LIA demo">
+                            <video src="images/videos/LIA_quest_game.mp4" poster="images/lia.jpg" muted loop playsinline preload="metadata" aria-hidden="true"></video>
+                            <span class="project-overlay"></span>
+                            <span class="play-badge" aria-hidden="true">
+                                <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                            </span>
+                        </button>
+                        <div class="project-body">
+                            <div class="project-tags">
+                                <span>Unity</span><span>C#</span><span>2D</span><span>Adventure</span>
+                            </div>
+                            <h3 class="project-title">LIA</h3>
+                            <p class="project-desc">Explore, solve puzzles, and uncover secrets in a 2D escape adventure where a girl encounters the seven deadly sins.</p>
+                            <div class="project-meta">
+                                <span>11/2022 &ndash; 04/2023</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal" style="--reveal-delay: 200ms">
+                        <button type="button" class="project-media" data-video-src="images/videos/educational_game.mp4" data-video-title="Znayka" aria-label="Play Znayka demo">
+                            <video src="images/videos/educational_game.mp4" poster="images/edu.jpg" muted loop playsinline preload="metadata" aria-hidden="true"></video>
+                            <span class="project-overlay"></span>
+                            <span class="play-badge" aria-hidden="true">
+                                <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                            </span>
+                        </button>
+                        <div class="project-body">
+                            <div class="project-tags">
+                                <span>Unity</span><span>Educational</span><span>Kids</span>
+                            </div>
+                            <h3 class="project-title">Znayka</h3>
+                            <p class="project-desc">An educational game for young children focused on learning shapes, colors, and numbers.</p>
+                            <div class="project-meta">
+                                <span>09/2022</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal" style="--reveal-delay: 300ms">
+                        <button type="button" class="project-media" data-video-src="images/videos/LosingHer_horror_game.mp4" data-video-title="Losing Her" aria-label="Play Losing Her demo">
+                            <video src="images/videos/LosingHer_horror_game.mp4" muted loop playsinline preload="metadata" aria-hidden="true"></video>
+                            <span class="project-overlay"></span>
+                            <span class="play-badge" aria-hidden="true">
+                                <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                            </span>
+                        </button>
+                        <div class="project-body">
+                            <div class="project-tags">
+                                <span>Unreal Engine</span><span>Horror</span><span>Narrative</span>
+                            </div>
+                            <h3 class="project-title">Losing Her</h3>
+                            <p class="project-desc">Search for your missing sister, uncover hidden clues, and survive the horrors lurking in the forest.</p>
+                            <div class="project-meta">
+                                <span>09/2021</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal" style="--reveal-delay: 400ms">
+                        <button type="button" class="project-media" data-video-src="images/videos/neon_protocol_visual_novel.mp4" data-video-title="Neon Protocol" aria-label="Play Neon Protocol demo">
+                            <video src="images/videos/neon_protocol_visual_novel.mp4" muted loop playsinline preload="metadata" aria-hidden="true"></video>
+                            <span class="project-overlay"></span>
+                            <span class="play-badge" aria-hidden="true">
+                                <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                            </span>
+                        </button>
+                        <div class="project-body">
+                            <div class="project-tags">
+                                <span>Unity</span><span>C#</span><span>Otome</span><span>Mobile</span>
+                            </div>
+                            <h3 class="project-title">Neon Protocol</h3>
+                            <p class="project-desc">Investigate a mysterious case, make choices, and uncover the truth in a mobile narrative thriller.</p>
+                            <div class="project-meta">
+                                <span>01/2026 &ndash; Present</span>
+                                <a href="http://xhslink.com/o/907erMO9FPd" target="_blank" rel="noopener">View project</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="projects-footer reveal">
+                    <a href="https://github.com/simplealice" target="_blank" rel="noopener" class="btn-ghost">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                        More on GitHub
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="section">
+            <div class="container">
+                <div class="section-head reveal">
+                    <h2>Education</h2>
+                </div>
+
+                <div class="education-list">
+                    <article class="education-card reveal">
+                        <span class="education-mark" aria-hidden="true">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/></svg>
+                        </span>
+                        <div class="education-body">
+                            <div class="education-top">
+                                <div>
+                                    <h3 class="education-school">Tsinghua University</h3>
+                                </div>
+                                <div class="education-meta">
+                                    <span class="education-place">Beijing, China</span>
+                                </div>
+                            </div>
+                            <ul class="education-timeline">
+                                <li class="education-timeline-item">
+                                    <span class="education-timeline-dot" aria-hidden="true"></span>
+                                    <p class="education-degree">Ph.D. in Computer Science</p>
+                                    <p class="education-timeline-date">09/2025 &ndash; Present</p>
+                                </li>
+                                <li class="education-timeline-item">
+                                    <span class="education-timeline-dot" aria-hidden="true"></span>
+                                    <p class="education-degree">M.S. in Computer Science</p>
+                                    <p class="education-timeline-date">09/2023 &ndash; 06/2025</p>
+                                </li>
+                            </ul>
+                            <p class="education-courses"><strong>Courses:</strong> Combinatorics and Algorithm Design, Software Project Management, Machine Learning, Human-Computer Interaction, Natural Language Processing.</p>
+                        </div>
+                    </article>
+
+                    <article class="education-card reveal" style="--reveal-delay: 100ms">
+                        <span class="education-mark" aria-hidden="true">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/></svg>
+                        </span>
+                        <div class="education-body">
+                            <div class="education-top">
+                                <div>
+                                    <h3 class="education-school">HSE University</h3>
+                                    <p class="education-degree">B.S. in Software Engineering</p>
+                                </div>
+                                <div class="education-meta">
+                                    <span class="education-date">09/2019 &ndash; 06/2023</span>
+                                    <span class="education-place">Moscow, Russia</span>
+                                </div>
+                            </div>
+                            <p class="education-courses"><strong>Courses:</strong> Algorithms and Data Structures, Databases, Calculus, Software Testing, Mathematical Statistics, Programming, Software System Architecture, UE 4 Game Development, Application Development.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section section-alt">
+            <div class="container">
+                <div class="section-head reveal">
+                    <h2>Contact</h2>
+                </div>
+
+                <div class="contact-panel reveal">
+                    <div class="contact-grid">
+                        <div class="contact-form-wrap">
+                            <form id="contact-form" novalidate>
+                                <div class="form-grid">
+                                    <div class="field">
+                                        <label for="name" class="form-label">Name</label>
+                                        <input type="text" class="form-control" id="name" name="name" placeholder="Your name" autocomplete="name" required>
+                                    </div>
+                                    <div class="field">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="email" name="email" placeholder="you@example.com" autocomplete="email" required>
+                                    </div>
+                                    <div class="field field--full">
+                                        <label for="message" class="form-label">Message</label>
+                                        <textarea class="form-control" id="message" name="message" rows="4" placeholder="Tell me about your idea..." required></textarea>
+                                    </div>
+                                    <div class="field field--full">
+                                        <button type="submit" class="btn-glow btn-full">
+                                            Send message
+                                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <p id="form-feedback" class="form-feedback" role="status" aria-live="polite"></p>
+                            </form>
+                        </div>
+
+                        <aside class="contact-aside">
+                            <h3>Connect with me</h3>
+                            <p>Based in Beijing. Reach me on any of these.</p>
+
+                            <div class="social-list">
+                                <a href="https://www.linkedin.com/in/alisa-perevoznikova-0366b32a7/" target="_blank" rel="noopener" class="social-card">
+                                    <span class="social-icon">
+                                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                                    </span>
+                                    <span class="social-text">
+                                        <strong>LinkedIn</strong>
+                                        <small>Alisa Perevoznikova</small>
+                                    </span>
+                                    <svg class="icon social-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+                                </a>
+                                <a href="https://github.com/simplealice" target="_blank" rel="noopener" class="social-card">
+                                    <span class="social-icon">
+                                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                                    </span>
+                                    <span class="social-text">
+                                        <strong>GitHub</strong>
+                                        <small>@simplealice</small>
+                                    </span>
+                                    <svg class="icon social-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+                                </a>
+                                <a href="mailto:simplealice2@yandex.ru" class="social-card">
+                                    <span class="social-icon">
+                                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                                    </span>
+                                    <span class="social-text">
+                                        <strong>Email</strong>
+                                        <small>simplealice2@yandex.ru</small>
+                                    </span>
+                                    <svg class="icon social-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+                                </a>
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <!-- Footer -->
-    <footer class="bg-success text-white text-center py-4">
-        <div class="container">
-            <p>© 2025 Simple Alice. All rights reserved.</p>
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <a href="#home" class="brand brand--footer" aria-label="Simple Alice - back to top">
+                <span class="brand-mark">A</span>
+                <span>Simple<span class="brand-accent">Alice</span></span>
+            </a>
+            <p class="footer-copy">&copy; <span id="year">2026</span> Simple Alice. Built with love.</p>
+            <div class="footer-socials">
+                <a href="https://www.linkedin.com/in/alisa-perevoznikova-0366b32a7/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                </a>
+                <a href="https://github.com/simplealice" target="_blank" rel="noopener" aria-label="GitHub">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                </a>
+                <a href="mailto:simplealice2@yandex.ru" aria-label="Email">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </a>
+            </div>
         </div>
     </footer>
 
     <!-- Back to Top Button -->
-    <a href="#home" class="back-to-top btn btn-success position-fixed bottom-0 end-0 m-3" style="display: none;">↑</a>
+    <button class="to-top" id="to-top" type="button" aria-label="Back to top">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+    </button>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+    <!-- Video Lightbox -->
+    <div class="video-modal" id="video-modal" hidden>
+        <div class="video-modal-backdrop" data-video-close></div>
+        <div class="video-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="video-modal-title">
+            <div class="video-modal-head">
+                <h3 class="video-modal-title" id="video-modal-title">Project demo</h3>
+                <div class="video-modal-actions">
+                    <button type="button" class="video-modal-btn" id="video-close" aria-label="Close video" data-video-close>
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                    </button>
+                </div>
+            </div>
+            <video id="video-modal-player" class="video-modal-player" controls playsinline preload="metadata"></video>
+        </div>
+    </div>
+
     <script src="func/script.js"></script>
 </body>
 </html>
