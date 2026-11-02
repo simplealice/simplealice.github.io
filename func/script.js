@@ -1,3 +1,4 @@
+const t = (key, vars) => (window.i18n ? window.i18n.t(key, vars) : key);
 const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 const revealElements = document.querySelectorAll('.reveal');
 
@@ -102,19 +103,19 @@ contactForm.addEventListener('submit', async (event) => {
     feedback.classList.remove('is-success', 'is-error');
 
     if (!name || !email || !message) {
-        feedback.textContent = 'Please fill out all fields.';
+        feedback.textContent = t('form.required');
         feedback.classList.add('is-error');
         return;
     }
 
     if (!emailPattern.test(email)) {
-        feedback.textContent = 'Please enter a valid email address.';
+        feedback.textContent = t('form.invalidEmail');
         feedback.classList.add('is-error');
         return;
     }
 
     contactSubmit.disabled = true;
-    feedback.textContent = 'Sending...';
+    feedback.textContent = t('form.sending');
 
     try {
         const response = await fetch(contactEndpoint, {
@@ -142,14 +143,14 @@ contactForm.addEventListener('submit', async (event) => {
             throw new Error(result.message || 'Request failed');
         }
 
-        feedback.textContent = `Thanks, ${name.split(' ')[0]}! I'll get back to you soon.`;
+        feedback.textContent = t('form.thanks', { name: name.split(' ')[0] });
         feedback.classList.add('is-success');
         contactForm.reset();
     } catch (error) {
         const detail = error && error.message && error.message !== 'Request failed'
-            ? ` (${error.message})`
+            ? t('form.errorDetail', { message: error.message })
             : '';
-        feedback.textContent = `Sorry, something went wrong${detail}. Please try again or email me directly at simplealice2@yandex.ru.`;
+        feedback.textContent = t('form.error', { detail });
         feedback.classList.add('is-error');
     } finally {
         contactSubmit.disabled = false;
@@ -183,7 +184,7 @@ const openVideoModal = (trigger) => {
     if (!videoModal || !videoPlayer) return;
 
     lastFocusedElement = trigger;
-    videoTitle.textContent = trigger.dataset.videoTitle || 'Project demo';
+    videoTitle.textContent = trigger.dataset.videoTitle || t('video.default');
     videoPlayer.src = trigger.dataset.videoSrc;
     videoModal.hidden = false;
     document.body.classList.add('modal-open');

@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Alisa Perevoznikova - game programmer and Unity developer building gameplay systems, puzzles, UI, and narrative tools.">
+    <meta name="description" content="Alisa Perevoznikova - game programmer and Unity developer building gameplay systems, puzzles, UI, and narrative tools." data-i18n-attr="content:meta.description">
     <meta name="theme-color" content="#070b0a">
-    <title>Alisa | Game Programmer &amp; Unity Developer</title>
+    <title data-i18n="meta.title">Alisa | Game Programmer &amp; Unity Developer</title>
     <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,21 +19,26 @@
     <!-- Header -->
     <header class="site-header" id="site-header">
         <div class="container nav-inner">
-            <a href="#home" class="brand" aria-label="Simple Alice - home">
+            <a href="#home" class="brand" aria-label="Simple Alice - home" data-i18n-attr="aria-label:brand.home">
                 <span class="brand-mark">A</span>
                 <span>Simple<span class="brand-accent">Alice</span></span>
             </a>
 
-            <nav class="nav-links" id="nav-links" aria-label="Primary">
-                <a href="#home" class="nav-link active">Home</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#projects" class="nav-link">Projects</a>
-                <a href="#education" class="nav-link">Education</a>
-                <a href="#contact" class="nav-link">Contact</a>
-                <a href="#contact" class="nav-cta">Let's talk</a>
+            <nav class="nav-links" id="nav-links" aria-label="Primary" data-i18n-attr="aria-label:nav.primary">
+                <a href="#home" class="nav-link active" data-i18n="nav.home">Home</a>
+                <a href="#about" class="nav-link" data-i18n="nav.about">About</a>
+                <a href="#projects" class="nav-link" data-i18n="nav.projects">Projects</a>
+                <a href="#education" class="nav-link" data-i18n="nav.education">Education</a>
+                <a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a>
+                <a href="#contact" class="nav-cta" data-i18n="nav.cta">Let's talk</a>
+                <div class="lang-switch" role="group" aria-label="Language" data-i18n-attr="aria-label:nav.lang">
+                    <button type="button" class="lang-btn" data-lang="en" aria-pressed="true">EN</button>
+                    <button type="button" class="lang-btn" data-lang="ru" aria-pressed="false">RU</button>
+                    <button type="button" class="lang-btn" data-lang="zh" aria-pressed="false">中文</button>
+                </div>
             </nav>
 
-            <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
+            <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links" data-i18n-attr="aria-label:nav.toggle">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -56,29 +61,29 @@
                     <div class="hero-copy reveal">
                         <span class="hero-badge">
                             <span class="status-dot"></span>
-                            Game Programmer &middot; Unity / C#
+                            <span data-i18n="hero.badge">Game Programmer &middot; Unity / C#</span>
                         </span>
-                        <h1 class="hero-title">Hi, I'm <span class="gradient-text">Alisa</span>.<br>I like creating things.</h1>
-                        <p class="hero-sub">I enjoy building the systems, mechanics, and bringing something new to this world.</p>
+                        <h1 class="hero-title" data-i18n-html="hero.title">Hi, I'm <span class="gradient-text">Alisa</span>.<br>I like creating things.</h1>
+                        <p class="hero-sub" data-i18n="hero.sub">I enjoy building the systems, mechanics, and bringing something new to this world.</p>
                         <div class="hero-actions">
                             <a href="#projects" class="btn-glow">
-                                Explore my universe
+                                <span data-i18n="hero.projects">Explore my universe</span>
                                 <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="7" x2="17" y2="17"/><polyline points="17 7 17 17 7 17"/></svg>
                             </a>
-                            <a href="images/CV-game-eng-3.pdf" class="btn-ghost" download="Alisa-Perevoznikova-CV.pdf">Download CV</a>
+                            <a href="images/CV-game-eng-3.pdf" class="btn-ghost" download="Alisa-Perevoznikova-CV.pdf" data-i18n="hero.cv">Download CV</a>
                         </div>
                         <div class="hero-stats">
                             <div class="stat">
                                 <span class="stat-value">5+</span>
-                                <span class="stat-label">Games built</span>
+                                <span class="stat-label" data-i18n="hero.stat.games">Games built</span>
                             </div>
                             <div class="stat">
                                 <span class="stat-value">2</span>
-                                <span class="stat-label">Gamejam awards</span>
+                                <span class="stat-label" data-i18n="hero.stat.awards">Gamejam awards</span>
                             </div>
                             <div class="stat">
                                 <span class="stat-value">PhD</span>
-                                <span class="stat-label">Tsinghua CS</span>
+                                <span class="stat-label" data-i18n="hero.stat.phd">Tsinghua CS</span>
                             </div>
                         </div>
                     </div>
@@ -86,7 +91,7 @@
                     <div class="hero-visual reveal" style="--reveal-delay: 140ms">
                         <div class="avatar-glow" aria-hidden="true"></div>
                         <div class="avatar-frame">
-                            <img src="images/avatar.jpg" alt="Portrait of Alisa" class="avatar-img" fetchpriority="high">
+                            <img src="images/avatar.jpg" alt="Portrait of Alisa" class="avatar-img" fetchpriority="high" data-i18n-attr="alt:hero.avatarAlt">
                         </div>
                         <div class="float-card float-card--top">
                             <span class="float-icon">
@@ -94,13 +99,13 @@
                             </span>
                             <div>
                                 <strong>Unity &middot; C#</strong>
-                                <small>Game development</small>
+                                <small data-i18n="hero.float.devSub">Game development</small>
                             </div>
                         </div>
                         <div class="float-card float-card--bottom">
                             <span class="status-dot"></span>
                             <div>
-                                <strong>Open to game roles</strong>
+                                <strong data-i18n="hero.float.open">Open to game roles</strong>
                                 <small>Unity &middot; C#</small>
                             </div>
                         </div>
@@ -108,9 +113,9 @@
                 </div>
             </div>
 
-            <a href="#about" class="scroll-hint" aria-label="Scroll to about section">
+            <a href="#about" class="scroll-hint" aria-label="Scroll to about section" data-i18n-attr="aria-label:hero.scrollAria">
                 <span class="scroll-mouse"></span>
-                Scroll
+                <span data-i18n="hero.scroll">Scroll</span>
             </a>
         </section>
 
@@ -118,23 +123,23 @@
         <section id="about" class="section">
             <div class="container">
                 <div class="section-head reveal">
-                    <h2>About</h2>
+                    <h2 data-i18n="about.title">About</h2>
                 </div>
 
                 <div class="about-grid">
                     <article class="glass-card about-card reveal">
-                        <p class="about-lead">I'm a game programmer working in Unity and C#.</p>
-                        <p class="about-text">My projects range from 2D platformers and narrative horror to educational games and a mobile visual novel. I’m a curious and adaptable developer who is comfortable working independently, collaborating with others, and picking up new technologies when needed.</p>
+                        <p class="about-lead" data-i18n="about.lead">I'm a game programmer working in Unity and C#.</p>
+                        <p class="about-text" data-i18n="about.text">My projects range from 2D platformers and narrative horror to educational games and a mobile visual novel. I’m a curious and adaptable developer who is comfortable working independently, collaborating with others, and picking up new technologies when needed.</p>
 
                         <div class="fact-grid">
                             <div class="fact fact--wide">
-                                <span class="fact-label">Languages</span>
-                                <span class="fact-value">Russian (native) &middot; English (fluent) &middot; Chinese (HSK4)</span>
+                                <span class="fact-label" data-i18n="about.languages">Languages</span>
+                                <span class="fact-value" data-i18n="about.languagesValue">Russian (native) &middot; English (fluent) &middot; Chinese (HSK4)</span>
                             </div>
                         </div>
 
                         <div class="about-tools">
-                            <h3 class="card-heading">Tools</h3>
+                            <h3 class="card-heading" data-i18n="about.tools">Tools</h3>
                             <div class="tech-chips">
                                 <span>ScriptableObjects</span>
                                 <span>Prefabs</span>
@@ -149,32 +154,32 @@
                     </article>
 
                     <article class="glass-card skills-card reveal" style="--reveal-delay: 120ms">
-                        <h3 class="card-heading">Skills</h3>
+                        <h3 class="card-heading" data-i18n="about.skills">Skills</h3>
 
                         <ul class="skill-list">
                             <li class="skill-item">
                                 <span class="skill-name">Unity</span>
-                                <span class="skill-level" aria-label="5 out of 5">★★★★★</span>
+                                <span class="skill-level" aria-label="5 out of 5" data-i18n-attr="aria-label:skill.rating5">★★★★★</span>
                             </li>
                             <li class="skill-item">
                                 <span class="skill-name">C#</span>
-                                <span class="skill-level" aria-label="4 out of 5">★★★★☆</span>
+                                <span class="skill-level" aria-label="4 out of 5" data-i18n-attr="aria-label:skill.rating4">★★★★☆</span>
                             </li>
                             <li class="skill-item">
                                 <span class="skill-name">C++</span>
-                                <span class="skill-level" aria-label="4 out of 5">★★★★☆</span>
+                                <span class="skill-level" aria-label="4 out of 5" data-i18n-attr="aria-label:skill.rating4">★★★★☆</span>
                             </li>
                             <li class="skill-item">
                                 <span class="skill-name">JavaScript / React</span>
-                                <span class="skill-level" aria-label="4 out of 5">★★★★☆</span>
+                                <span class="skill-level" aria-label="4 out of 5" data-i18n-attr="aria-label:skill.rating4">★★★★☆</span>
                             </li>
                             <li class="skill-item">
                                 <span class="skill-name">Java</span>
-                                <span class="skill-level" aria-label="4 out of 5">★★★★☆</span>
+                                <span class="skill-level" aria-label="4 out of 5" data-i18n-attr="aria-label:skill.rating4">★★★★☆</span>
                             </li>
                             <li class="skill-item">
                                 <span class="skill-name">SQL</span>
-                                <span class="skill-level" aria-label="3 out of 5">★★★☆☆</span>
+                                <span class="skill-level" aria-label="3 out of 5" data-i18n-attr="aria-label:skill.rating3">★★★☆☆</span>
                             </li>
                         </ul>
                     </article>
@@ -186,12 +191,12 @@
         <section id="projects" class="section section-alt">
             <div class="container">
                 <div class="section-head reveal">
-                    <h2>Projects</h2>
+                    <h2 data-i18n="projects.title">Projects</h2>
                 </div>
 
                 <div class="project-grid">
                     <article class="project-card reveal">
-                        <button type="button" class="project-media" data-video-src="images/videos/BeyondTheCode.mp4" data-video-title="Beyond The Code" aria-label="Play Beyond The Code demo">
+                        <button type="button" class="project-media" data-video-src="images/videos/BeyondTheCode.mp4" data-video-title="Beyond The Code" aria-label="Play Beyond The Code demo" data-i18n-attr="aria-label:project.beyond.play">
                             <video src="images/videos/BeyondTheCode.mp4" poster="images/beyond.jpg" muted loop playsinline preload="metadata" aria-hidden="true"></video>
                             <span class="project-overlay"></span>
                             <span class="play-badge" aria-hidden="true">
@@ -200,20 +205,20 @@
                         </button>
                         <div class="project-body">
                             <div class="project-tags">
-                                <span>Unity</span><span>C#</span><span>Platformer</span><span>Game jam</span>
+                                <span>Unity</span><span>C#</span><span data-i18n="project.tag.platformer">Platformer</span><span data-i18n="project.tag.gamejam">Game jam</span>
                             </div>
                             <h3 class="project-title">Beyond The Code</h3>
-                            <p class="project-desc">Guide a ghost through cyberspace, activate ports, unlock abilities, and dodge danger in this 2D platformer.</p>
-                            <p class="project-award">Best Potential Award &middot; Offline Popularity Award</p>
+                            <p class="project-desc" data-i18n="project.beyond.desc">Guide a ghost through cyberspace, activate ports, unlock abilities, and dodge danger in this 2D platformer.</p>
+                            <p class="project-award" data-i18n="project.beyond.award">Best Potential Award &middot; Offline Popularity Award</p>
                             <div class="project-meta">
-                                <span>10/2024</span>
-                                <a href="https://leihuo.163.com/h5/20240920/gamejam-hz/#/workDetail/64" target="_blank" rel="noopener">View submission</a>
+                                <span data-i18n="project.beyond.date">10/2024</span>
+                                <a href="https://leihuo.163.com/h5/20240920/gamejam-hz/#/workDetail/64" target="_blank" rel="noopener" data-i18n="project.viewSubmission">View submission</a>
                             </div>
                         </div>
                     </article>
 
                     <article class="project-card reveal" style="--reveal-delay: 100ms">
-                        <button type="button" class="project-media" data-video-src="images/videos/LIA_quest_game.mp4" data-video-title="LIA" aria-label="Play LIA demo">
+                        <button type="button" class="project-media" data-video-src="images/videos/LIA_quest_game.mp4" data-video-title="LIA" aria-label="Play LIA demo" data-i18n-attr="aria-label:project.lia.play">
                             <video src="images/videos/LIA_quest_game.mp4" poster="images/lia.jpg" muted loop playsinline preload="metadata" aria-hidden="true"></video>
                             <span class="project-overlay"></span>
                             <span class="play-badge" aria-hidden="true">
@@ -222,18 +227,18 @@
                         </button>
                         <div class="project-body">
                             <div class="project-tags">
-                                <span>Unity</span><span>C#</span><span>2D</span><span>Adventure</span>
+                                <span>Unity</span><span>C#</span><span>2D</span><span data-i18n="project.tag.adventure">Adventure</span>
                             </div>
                             <h3 class="project-title">LIA</h3>
-                            <p class="project-desc">Explore, solve puzzles, and uncover secrets in a 2D escape adventure where a girl encounters the seven deadly sins.</p>
+                            <p class="project-desc" data-i18n="project.lia.desc">Explore, solve puzzles, and uncover secrets in a 2D escape adventure where a girl encounters the seven deadly sins.</p>
                             <div class="project-meta">
-                                <span>11/2022 &ndash; 04/2023</span>
+                                <span data-i18n="project.lia.date">11/2022 &ndash; 04/2023</span>
                             </div>
                         </div>
                     </article>
 
                     <article class="project-card reveal" style="--reveal-delay: 200ms">
-                        <button type="button" class="project-media" data-video-src="images/videos/educational_game.mp4" data-video-title="Znayka" aria-label="Play Znayka demo">
+                        <button type="button" class="project-media" data-video-src="images/videos/educational_game.mp4" data-video-title="Znayka" aria-label="Play Znayka demo" data-i18n-attr="aria-label:project.znayka.play">
                             <video src="images/videos/educational_game.mp4" poster="images/edu.jpg" muted loop playsinline preload="metadata" aria-hidden="true"></video>
                             <span class="project-overlay"></span>
                             <span class="play-badge" aria-hidden="true">
@@ -242,18 +247,18 @@
                         </button>
                         <div class="project-body">
                             <div class="project-tags">
-                                <span>Unity</span><span>Educational</span><span>Kids</span>
+                                <span>Unity</span><span data-i18n="project.tag.educational">Educational</span><span data-i18n="project.tag.kids">Kids</span>
                             </div>
                             <h3 class="project-title">Znayka</h3>
-                            <p class="project-desc">An educational game for young children focused on learning shapes, colors, and numbers.</p>
+                            <p class="project-desc" data-i18n="project.znayka.desc">An educational game for young children focused on learning shapes, colors, and numbers.</p>
                             <div class="project-meta">
-                                <span>09/2022</span>
+                                <span data-i18n="project.znayka.date">09/2022</span>
                             </div>
                         </div>
                     </article>
 
                     <article class="project-card reveal" style="--reveal-delay: 300ms">
-                        <button type="button" class="project-media" data-video-src="images/videos/LosingHer_horror_game.mp4" data-video-title="Losing Her" aria-label="Play Losing Her demo">
+                        <button type="button" class="project-media" data-video-src="images/videos/LosingHer_horror_game.mp4" data-video-title="Losing Her" aria-label="Play Losing Her demo" data-i18n-attr="aria-label:project.losing.play">
                             <video src="images/videos/LosingHer_horror_game.mp4" muted loop playsinline preload="metadata" aria-hidden="true"></video>
                             <span class="project-overlay"></span>
                             <span class="play-badge" aria-hidden="true">
@@ -262,18 +267,18 @@
                         </button>
                         <div class="project-body">
                             <div class="project-tags">
-                                <span>Unreal Engine</span><span>Horror</span><span>Narrative</span>
+                                <span>Unreal Engine</span><span data-i18n="project.tag.horror">Horror</span><span data-i18n="project.tag.narrative">Narrative</span>
                             </div>
                             <h3 class="project-title">Losing Her</h3>
-                            <p class="project-desc">Search for your missing sister, uncover hidden clues, and survive the horrors lurking in the forest.</p>
+                            <p class="project-desc" data-i18n="project.losing.desc">Search for your missing sister, uncover hidden clues, and survive the horrors lurking in the forest.</p>
                             <div class="project-meta">
-                                <span>09/2021</span>
+                                <span data-i18n="project.losing.date">09/2021</span>
                             </div>
                         </div>
                     </article>
 
                     <article class="project-card reveal" style="--reveal-delay: 400ms">
-                        <button type="button" class="project-media" data-video-src="images/videos/neon_protocol_visual_novel.mp4" data-video-title="Neon Protocol" aria-label="Play Neon Protocol demo">
+                        <button type="button" class="project-media" data-video-src="images/videos/neon_protocol_visual_novel.mp4" data-video-title="Neon Protocol" aria-label="Play Neon Protocol demo" data-i18n-attr="aria-label:project.neon.play">
                             <video src="images/videos/neon_protocol_visual_novel.mp4" muted loop playsinline preload="metadata" aria-hidden="true"></video>
                             <span class="project-overlay"></span>
                             <span class="play-badge" aria-hidden="true">
@@ -282,13 +287,13 @@
                         </button>
                         <div class="project-body">
                             <div class="project-tags">
-                                <span>Unity</span><span>C#</span><span>Otome</span><span>Mobile</span>
+                                <span>Unity</span><span>C#</span><span data-i18n="project.tag.otome">Otome</span><span data-i18n="project.tag.mobile">Mobile</span>
                             </div>
                             <h3 class="project-title">Neon Protocol</h3>
-                            <p class="project-desc">Investigate a mysterious case, make choices, and uncover the truth in a mobile narrative thriller.</p>
+                            <p class="project-desc" data-i18n="project.neon.desc">Investigate a mysterious case, make choices, and uncover the truth in a mobile narrative thriller.</p>
                             <div class="project-meta">
-                                <span>01/2026 &ndash; Present</span>
-                                <a href="http://xhslink.com/o/907erMO9FPd" target="_blank" rel="noopener">View project</a>
+                                <span data-i18n="project.neon.date">01/2026 &ndash; Present</span>
+                                <a href="http://xhslink.com/o/907erMO9FPd" target="_blank" rel="noopener" data-i18n="project.viewProject">View project</a>
                             </div>
                         </div>
                     </article>
@@ -297,7 +302,7 @@
                 <div class="projects-footer reveal">
                     <a href="https://github.com/simplealice" target="_blank" rel="noopener" class="btn-ghost">
                         <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-                        More on GitHub
+                        <span data-i18n="projects.moreGithub">More on GitHub</span>
                     </a>
                 </div>
             </div>
@@ -307,7 +312,7 @@
         <section id="education" class="section">
             <div class="container">
                 <div class="section-head reveal">
-                    <h2>Education</h2>
+                    <h2 data-i18n="education.title">Education</h2>
                 </div>
 
                 <div class="education-list">
@@ -321,22 +326,22 @@
                                     <h3 class="education-school">Tsinghua University</h3>
                                 </div>
                                 <div class="education-meta">
-                                    <span class="education-place">Beijing, China</span>
+                                    <span class="education-place" data-i18n="education.tsinghua.place">Beijing, China</span>
                                 </div>
                             </div>
                             <ul class="education-timeline">
                                 <li class="education-timeline-item">
                                     <span class="education-timeline-dot" aria-hidden="true"></span>
-                                    <p class="education-degree">Ph.D. in Computer Science</p>
-                                    <p class="education-timeline-date">09/2025 &ndash; Present</p>
+                                    <p class="education-degree" data-i18n="education.phd">Ph.D. in Computer Science</p>
+                                    <p class="education-timeline-date" data-i18n="education.phd.date">09/2025 &ndash; Present</p>
                                 </li>
                                 <li class="education-timeline-item">
                                     <span class="education-timeline-dot" aria-hidden="true"></span>
-                                    <p class="education-degree">M.S. in Computer Science</p>
-                                    <p class="education-timeline-date">09/2023 &ndash; 06/2025</p>
+                                    <p class="education-degree" data-i18n="education.ms">M.S. in Computer Science</p>
+                                    <p class="education-timeline-date" data-i18n="education.ms.date">09/2023 &ndash; 06/2025</p>
                                 </li>
                             </ul>
-                            <p class="education-courses"><strong>Courses:</strong> Combinatorics and Algorithm Design, Software Project Management, Machine Learning, Human-Computer Interaction, Natural Language Processing.</p>
+                            <p class="education-courses"><strong data-i18n="education.coursesLabel">Courses:</strong> <span data-i18n="education.tsinghua.courses">Combinatorics and Algorithm Design, Software Project Management, Machine Learning, Human-Computer Interaction, Natural Language Processing.</span></p>
                         </div>
                     </article>
 
@@ -348,14 +353,14 @@
                             <div class="education-top">
                                 <div>
                                     <h3 class="education-school">HSE University</h3>
-                                    <p class="education-degree">B.S. in Software Engineering</p>
+                                    <p class="education-degree" data-i18n="education.bs">B.S. in Software Engineering</p>
                                 </div>
                                 <div class="education-meta">
-                                    <span class="education-date">09/2019 &ndash; 06/2023</span>
-                                    <span class="education-place">Moscow, Russia</span>
+                                    <span class="education-date" data-i18n="education.hse.date">09/2019 &ndash; 06/2023</span>
+                                    <span class="education-place" data-i18n="education.hse.place">Moscow, Russia</span>
                                 </div>
                             </div>
-                            <p class="education-courses"><strong>Courses:</strong> Algorithms and Data Structures, Databases, Calculus, Software Testing, Mathematical Statistics, Programming, Software System Architecture, UE 4 Game Development, Application Development.</p>
+                            <p class="education-courses"><strong data-i18n="education.coursesLabel">Courses:</strong> <span data-i18n="education.hse.courses">Algorithms and Data Structures, Databases, Calculus, Software Testing, Mathematical Statistics, Programming, Software System Architecture, UE 4 Game Development, Application Development.</span></p>
                         </div>
                     </article>
                 </div>
@@ -366,7 +371,7 @@
         <section id="contact" class="section section-alt">
             <div class="container">
                 <div class="section-head reveal">
-                    <h2>Contact</h2>
+                    <h2 data-i18n="contact.title">Contact</h2>
                 </div>
 
                 <div class="contact-panel reveal">
@@ -375,20 +380,20 @@
                             <form id="contact-form" novalidate>
                                 <div class="form-grid">
                                     <div class="field">
-                                        <label for="name" class="form-label">Name</label>
-                                        <input type="text" class="form-control" id="name" name="name" placeholder="Your name" autocomplete="name" required>
+                                        <label for="name" class="form-label" data-i18n="contact.name">Name</label>
+                                        <input type="text" class="form-control" id="name" name="name" placeholder="Your name" autocomplete="name" required data-i18n-attr="placeholder:contact.namePlaceholder">
                                     </div>
                                     <div class="field">
-                                        <label for="email" class="form-label">Email</label>
-                                        <input type="email" class="form-control" id="email" name="email" placeholder="you@example.com" autocomplete="email" required>
+                                        <label for="email" class="form-label" data-i18n="contact.email">Email</label>
+                                        <input type="email" class="form-control" id="email" name="email" placeholder="you@example.com" autocomplete="email" required data-i18n-attr="placeholder:contact.emailPlaceholder">
                                     </div>
                                     <div class="field field--full">
-                                        <label for="message" class="form-label">Message</label>
-                                        <textarea class="form-control" id="message" name="message" rows="4" placeholder="Tell me about your idea..." required></textarea>
+                                        <label for="message" class="form-label" data-i18n="contact.message">Message</label>
+                                        <textarea class="form-control" id="message" name="message" rows="4" placeholder="Tell me about your idea..." required data-i18n-attr="placeholder:contact.messagePlaceholder"></textarea>
                                     </div>
                                     <div class="field field--full">
                                         <button type="submit" class="btn-glow btn-full">
-                                            Send message
+                                            <span data-i18n="contact.send">Send message</span>
                                             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
                                         </button>
                                     </div>
@@ -398,8 +403,8 @@
                         </div>
 
                         <aside class="contact-aside">
-                            <h3>Connect with me</h3>
-                            <p>Based in Beijing. Reach me on any of these.</p>
+                            <h3 data-i18n="contact.connect">Connect with me</h3>
+                            <p data-i18n="contact.based">Based in Beijing. Reach me on any of these.</p>
 
                             <div class="social-list">
                                 <a href="https://www.linkedin.com/in/alisa-perevoznikova-0366b32a7/" target="_blank" rel="noopener" class="social-card">
@@ -427,7 +432,7 @@
                                         <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
                                     </span>
                                     <span class="social-text">
-                                        <strong>Email</strong>
+                                        <strong data-i18n="contact.emailLabel">Email</strong>
                                         <small>simplealice2@yandex.ru</small>
                                     </span>
                                     <svg class="icon social-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
@@ -443,11 +448,11 @@
     <!-- Footer -->
     <footer class="site-footer">
         <div class="container footer-inner">
-            <a href="#home" class="brand brand--footer" aria-label="Simple Alice - back to top">
+            <a href="#home" class="brand brand--footer" aria-label="Simple Alice - back to top" data-i18n-attr="aria-label:brand.footer">
                 <span class="brand-mark">A</span>
                 <span>Simple<span class="brand-accent">Alice</span></span>
             </a>
-            <p class="footer-copy">&copy; <span id="year">2026</span> Simple Alice. Built with love.</p>
+            <p class="footer-copy">&copy; <span id="year">2026</span> <span data-i18n="footer.copy">Simple Alice. Built with love.</span></p>
             <div class="footer-socials">
                 <a href="https://www.linkedin.com/in/alisa-perevoznikova-0366b32a7/" target="_blank" rel="noopener" aria-label="LinkedIn">
                     <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
@@ -455,7 +460,7 @@
                 <a href="https://github.com/simplealice" target="_blank" rel="noopener" aria-label="GitHub">
                     <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
                 </a>
-                <a href="mailto:simplealice2@yandex.ru" aria-label="Email">
+                <a href="mailto:simplealice2@yandex.ru" aria-label="Email" data-i18n-attr="aria-label:contact.emailLabel">
                     <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
                 </a>
             </div>
@@ -463,7 +468,7 @@
     </footer>
 
     <!-- Back to Top Button -->
-    <button class="to-top" id="to-top" type="button" aria-label="Back to top">
+    <button class="to-top" id="to-top" type="button" aria-label="Back to top" data-i18n-attr="aria-label:footer.backToTop">
         <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
     </button>
 
@@ -472,9 +477,9 @@
         <div class="video-modal-backdrop" data-video-close></div>
         <div class="video-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="video-modal-title">
             <div class="video-modal-head">
-                <h3 class="video-modal-title" id="video-modal-title">Project demo</h3>
+                <h3 class="video-modal-title" id="video-modal-title" data-i18n="video.default">Project demo</h3>
                 <div class="video-modal-actions">
-                    <button type="button" class="video-modal-btn" id="video-close" aria-label="Close video" data-video-close>
+                    <button type="button" class="video-modal-btn" id="video-close" aria-label="Close video" data-video-close data-i18n-attr="aria-label:video.close">
                         <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
                     </button>
                 </div>
@@ -483,6 +488,7 @@
         </div>
     </div>
 
+    <script src="func/i18n.js"></script>
     <script src="func/script.js"></script>
 </body>
 </html>
